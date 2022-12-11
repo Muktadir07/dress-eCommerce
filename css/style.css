@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@100&family=Playfair+Display:wght@500;600;700;800;900&display=swap');
+
+:root{
+    --lg-font: 'Manrope', sans-serif;
+    --slider-title:'Kaushan Script', cursive;
+    --bg-primary: #6F533E;
+    --primary-color:#FFC05E;
+}
+a{
+    font-family: var(--lg-font);
+}
+h1{
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 126.1%;
+    color: #FFFFFF;
+}
+h3{
+    font-family: var(--lg-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #503A2A;
+}
+
+h4{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 130% */
+    color: #B4A993;
+}
+h5{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    /* identical to box height, or 130% */
+    color: #F2B227;
+}
+p{
+    font-family: var(--lg-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+
+}
+
+
+
+header{
+    background: var(--bg-primary);
+    padding: 20px 0;
+}
+.topnav{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.topnav a{
+    position: relative;
+}
+.topnav a:hover{
+    color: #FFC05E;
+}
+.topnav a::after{
+    position: absolute;
+    content: "";
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 0;
+    border-radius: 15px;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.topnav a:hover::after{
+    width: 100%;
+}
+.navbar-nav .nav-link .active{
+    color: #FFC05E !important;
+}
+
+/*======================= nav icons=========================================
+=========================================================*/
+
+.icondiv{
+    position: relative;
+    padding: 0 8px;
+    margin: 0 3px;
+}
+    .icondiv i{
+        color: rgba(255, 255, 255, 0.316);
+        font-size: 20px;
+    }
+    .icondiv span {
+        position: absolute;
+        background-color: var(--primary-color);
+        width: 18px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: 700;
+        top: -7px;
+        left: 0;
+    }
+.iconmenu p{
+    color: rgba(255, 255, 255, 0.316);
+    font-weight: 700;
+    font-size: 13px;
+
+}
+
+/*======================= Slider=========================================
+=========================================================*/
+#banner{
+    background-color: var(--bg-primary);
+}
+.carousel-inner{
+    padding: 50px 0;
+    padding-bottom: 100px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    opacity: 0;
+    visibility: hidden;
+    
+    transition: 0.25s ease-out !important;
+  /* Move into place */
+    /* transform: translateX(100%); */
+    
+}
+
+button.carousel-control-next:hover .carousel-control-next-icon{
+    transition: 0.25s ease-in !important;
+    transform: translateX(40%);
+    opacity: 1;
+    visibility: visible;
+}
+button.carousel-control-prev:hover .carousel-control-prev-icon{
+    transition: 0.25s ease-in !important;
+    transform: translateX(-40%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-control-next {
+    right:-70px !important;
+    justify-content: end ;
+}
+.carousel-control-prev {
+    left:-70px !important;
+    justify-content: start ;
+}
+.carousel-indicators {
+    right:50px;
+    justify-content: end;
+  
+}
+.carousel-indicators [data-bs-target] {
+    
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    border: 5px solid #6f533e;
+    box-shadow: 0 0 4px 0px #ebe8e8;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.carousel-item .carousel-text {
+    position: absolute;
+    width: 525px;
+    top: 7%;
+    left: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    z-index: 2;
+}
+.carousel-item .carousel-text h1{
+    font-family: var(--slider-title);
+    font-size: 96px;
+
+}
+.carousel-text .shopbtn {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 15px 40px;
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 1, 0);
+    transition: ease-in 0.4s;
+    z-index: 1;
+    
+}
+.carousel-text .shopbtn:hover {
+    color: #FFFFFF;
+    box-shadow: inset 10rem 0px 0px 0px #000000;
+    transition: ease-in 0.4s;
+    border-color: #000000;
+}
+
+/*======================= Slider text animation =========================================
+=========================================================*/
+
+.animate {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+      
+  @keyframes animate-fade {
+      0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+  .animate.pop {
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  }
+  
+  @keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+          
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+  
+  
+  .delay-1 {
+    animation-delay: 0.6s;
+  }
+      
+  .delay-2 {
+    animation-delay: 0.7s;
+  }
+      
+  .delay-3 {
+    animation-delay: 0.8s;
+  }
+/*======================= Slider ORBIT=========================================
+=========================================================*/
+
+    /* ---------- Container for the orbiting circles animation ---------- */
+.orbit{
+    display: flex;
+    position: relative;
+}
+.orbit .slider-image{
+    position: absolute;
+    bottom:-15px;
+    right: 20px;
+    z-index: 1;
+
+}
+
+    #circle-orbit-container {
+    position: relative;
+    top: 10px;
+    right: 25px;
+    margin-left: auto;
+    margin-right: 2%;
+    height: 510px;
+    width: 510px;
+}
+  
+  /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+  #inner-orbit {
+    position: absolute;
+    top: 21%;
+    right: 21.5%;
+    width: 270px;
+    height: 270px;
+    border: 1px #BD987D solid;
+    background: #ffffff57;
+    border-radius: 100%;
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+}
+  
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .inner-orbit-cirlces {
+    position: absolute;
+    top: 62px;
+    right: 10px;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: #f2b227;
+}
+  
+  /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+  #middle-orbit {
+    position: absolute;
+    top: 50px;
+    right: 52px;
+    width: 390px;
+    height: 390px;
+    border: 1px #9A8677 solid;
+    border-radius: 100%;
+    -webkit-animation: spin-left 15s linear infinite;
+    animation: spin-left 15s linear infinite;
+}
+  
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .middle-orbit-cirlces1, .middle-orbit-cirlces2{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #BD987D;
+}
+.middle-orbit-cirlces1{
+    top: 25px;
+    right: 74px;
+    background-color: #F2B227;
+}
+.middle-orbit-cirlces2 {
+    top: 40%;
+    left: -5px;
+    height: 15px;
+    width: 15px;
+    background-color: #BD987D;
+}
+  
+  /* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+  #outer-orbit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    border: 1px #9A8677 solid;
+    border-radius: 100%;
+    -webkit-animation: spin-right 20s linear infinite;
+    animation: spin-right 20s linear infinite;
+}
+  
+  /* ---------- Repeating styles for the outer orbiting circles ---------- */
+  .outer-orbit-cirlce1, .outer-orbit-cirlce1-2, .outer-orbit-cirlce2, .outer-orbit-cirlce3, .outer-orbit-cirlce4{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    
+}
+.outer-orbit-cirlce1 {
+    top: 21px;
+    left: 125px;
+    height: 15px;
+    width: 15px;
+    background-color: #BD987D;
+
+}
+.outer-orbit-cirlce1-2 {
+    top: 0px;
+    left: 60%;
+    height: 15px;
+    width: 15px;
+    background-color: #F2B227;
+}
+.outer-orbit-cirlce2 {
+    top: 70%;
+    left: 14px;
+    background-color: #F2B227;
+
+}
+.outer-orbit-cirlce3 {
+    right: 13px;
+    top: 70%;
+    background-color: #BD987D;
+}
+.outer-orbit-cirlce4 {
+    right: -8px;
+    top: 50%;
+    background-color: #bd987d00;
+    border: 2px #bd987daa solid;
+    width: 15px;
+    height: 15px;
+}
+  /* ---------- Animation ---------- */
+      @-webkit-keyframes spin-right {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  } 
+  @-webkit-keyframes spin-left {
+    50% {
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+  }    
+
+  /*======================= Service Section =========================================
+=========================================================*/
+
+#service-section {
+    background-color: #D8C9B2;
+    padding: 50px 0;
+    
+}
+#service-section .service-item{
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+}
+#service-section .service-item::before {
+    content: "";
+    width: 1px;
+    background: #A0846FFC;
+    height: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    right: 20px;
+}
+#service-section .service-item:last-child::before{
+    width: 0;
+}
+
+.service-item .text{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #503A2A;
+}
