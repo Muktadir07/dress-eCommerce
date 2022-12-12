@@ -7,6 +7,14 @@
     --bg-primary: #6F533E;
     --primary-color:#FFC05E;
 }
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: center;
+}
 a{
     font-family: var(--lg-font);
 }
@@ -15,6 +23,17 @@ h1{
     font-size: 96px;
     line-height: 126.1%;
     color: #FFFFFF;
+}
+
+h2{
+    font-family: var(--lg-font);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #222222;
 }
 h3{
     font-family: var(--lg-font);
@@ -422,7 +441,7 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
   }    
 
   /*======================= Service Section =========================================
-=========================================================*/
+======================================================================================*/
 
 #service-section {
     background-color: #D8C9B2;
@@ -455,3 +474,169 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
     margin-top: 20px;
     color: #503A2A;
 }
+
+  /*======================= Service Section end =========================================
+======================================================================================*/
+
+  /*======================= Category Image Section =========================================
+======================================================================================*/
+#category-image{
+    padding-bottom: 77px;
+    padding-top: 120px;
+}
+.heading{
+    /* margin-top: 120px; */
+    margin-bottom: 56px;
+}
+.circle{
+    position: relative;
+}
+.circle i{
+    font-size: 24px;
+
+}
+.circle::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 3px;
+    background: #F2B227;
+    border-radius: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.circle:first-child::before{
+    left: -20%;
+}
+.circle:last-child::before{
+    right: -20%;
+}
+#category-image .more-btn .btn{
+    font-family: var(--lg-font);
+    padding-bottom: 12px;
+    padding-right: 0px;
+}
+#category-image .more-btn .btn:active{
+    border-color: #FFFFFF;
+}
+#category-image .more-btn .btn i{
+    font-size: 18px;
+    color: #B09078;
+
+}
+ /* =========================Swiper Slider================================ */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .category-slider .swiper {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border: 1px solid #EBEBEB;
+  }
+   .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+  }
+  
+
+   .category-slider .swiper-pagination-horizontal {
+    top: inherit;
+    bottom: 0;
+    height: 3px;
+    background: transparent;
+    }
+    .category-slider .swiper-pagination-progressbar-fill{
+        background: #F2B227;
+    } 
+  
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    object-fit: cover;
+    
+    
+  }
+  #category-image .swiper-slide img{
+    max-width: 139px;
+    max-height: 139px;
+    border: 7px solid #ffffff;
+  }
+  #category-image .swiper-slide .imagebox.active img{
+    border: 7px solid #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+  #category-image .swiper-slide .imagebox p{
+    color: #222222;
+    font-weight: 500;
+  }
+
+  #category-image .swiper-slide{
+    position: relative;
+  }
+
+  #category-image .swiper-slide::after {
+    position: absolute;
+    content: '';
+    bottom: -53px;
+    left: 0;
+    width: 0;
+    height: 7px;
+    background: #F2B227;
+    display: none;
+}
+
+#category-image .swiper-slide.swiper-slide-active::after{
+    /* display: block; */
+    width: 100%;
+    
+}
+#category-image .swiper-slide.swiper-slide-active img {
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.08));
+}
+
+/*======================= Category Image Section end=========================================
+======================================================================================*/
+
+/*======================= Product Carousel =========================================
+======================================================================================*/
+#product-carousel{
+    padding-bottom: 77px;
+    padding-top: 77px;
+    background: #FFF9F5;
+}
+
+#product-carousel .btn{
+    font-weight: 500;
+    text-decoration: underline;
+    color: #6F533E;
+    
+}
+#product-carousel .swiper {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border: 1px solid #EBEBEB;
+  }
+
+/*======================= Product Carousel end =========================================
+======================================================================================*/
