@@ -6,10 +6,12 @@
     --slider-title:'Kaushan Script', cursive;
     --bg-primary: #6F533E;
     --primary-color:#FFC05E;
+    --text-dark:#222222;
 }
 body{
     font-family: 'Manrope', sans-serif;
 }
+
 
 .d_flex{
     display: flex;
@@ -525,16 +527,16 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
 
 }
  /* =========================Swiper Slider================================ */
-  .swiper {
+.swiper {
     width: 100%;
     height: 100%;
-  }
-  .category-slider .swiper {
+}
+.category-slider .swiper {
     padding-top: 70px;
     padding-bottom: 50px;
     border: 1px solid #EBEBEB;
-  }
-   .swiper-slide {
+}
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -551,51 +553,47 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center;
-    
-  }
-  
-
-   .category-slider .swiper-pagination-horizontal {
+    align-items: center;  
+}
+.category-slider .swiper-pagination-horizontal {
     top: inherit;
     bottom: 0;
     height: 3px;
     background: transparent;
-    }
-    .category-slider .swiper-pagination-progressbar-fill{
-        background: #F2B227;
-    } 
-  
-
-  .swiper-slide img {
+}
+.category-slider .swiper-pagination-progressbar-fill{
+    background: #F2B227;
+} 
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+.category-slider .swiper-slide img {
     border-radius: 50%;
     margin-bottom: 12px;
     object-fit: cover;
-    
-    
-  }
-  #category-image .swiper-slide img{
+}
+#category-image .swiper-slide img{
     max-width: 139px;
     max-height: 139px;
     border: 7px solid #ffffff;
-  }
-  #category-image .swiper-slide .imagebox.active img{
+}
+#category-image .swiper-slide .imagebox.active img{
     border: 7px solid #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  }
-  #category-image .swiper-slide .imagebox p{
+}
+#category-image .swiper-slide .imagebox p{
     color: #222222;
     font-weight: 500;
-  }
+}
 
-  #category-image .swiper-slide{
+#category-image .swiper-slide{
     position: relative;
-  }
+}
 
-  #category-image .swiper-slide::after {
+#category-image .swiper-slide::after {
     position: absolute;
     content: '';
     bottom: -53px;
@@ -633,10 +631,312 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
     
 }
 #product-carousel .swiper {
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 50px;
-    border: 1px solid #EBEBEB;
-  }
+    
+}
+#product-carousel .swiper-slide {
+    background-color: #FFF9F5;
+}
+.imageproduct .category{
+    padding-top: 16px;
+    margin-bottom: 10px;
+    color: #777777;
+    font-weight: 500;
+}
+.imageproduct .title{
+    font-size: 20px;
+    color:var(--text-dark);
+}
+.imageproduct h3{
+    font-size: 18px;
+}
+.imageproduct .price-discount{ 
+    color:#FF2F2F;  
+}
+.imageproduct .price-discount span{
+    font-size: 14px;
+    text-decoration: line-through;
+    padding-left: 5px;
+    color: #c4c4c4;
+}
+.image-layer{
+    position: relative;
+}
+.image-layer .overlay{
+    width: 0;
+    height: 100%;
+    background: var(--text-dark); 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0.7;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+.imageproduct:hover .overlay{
+    width: 100%;
+    opacity: 0.15;
+}
+.image-layer .cart{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: var(--lg-font);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 0;
+    border: none;
+    background: rgba(111, 83, 62, 0.6);
+    backdrop-filter: blur(37.5px);
+    transform:translateY(50%) scaleY(0);
+    transition: 0.4s;
+
+}
+.imageproduct:hover .cart{
+    transform:translateY(0%)  scaleY(1);
+}
+button.wishlist {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    z-index: 1;
+}
+
+.product-swiper-slider{
+    position: relative;
+}
+.product-swiper-slider .swiper-button-next, .swiper-button-prev {
+    top: 40%;
+    color: transparent;
+}
+.product-swiper-slider .swiper-button-next{
+    right: -70px;
+}
+.product-swiper-slider .swiper-button-prev{
+    left: -50px;
+}
+.product-swiper-slider .swiper-button-next i, .swiper-button-prev i{
+    font-size: 35px;
+    color: var(--swiper-navigation-color,var(--text-dark)); 
+}
+.product-swiper-slider .swiper-button-prev i{
+    rotate: 180deg;
+}
+
+.swiper-pagination-bullet { 
+    width: 10px; 
+    height: 10px; 
+    background: #E2CFC1; 
+    opacity: 1; 
+}
+.swiper-pagination-bullet-active { 
+    width: 20px; 
+    transition: width .5s; 
+    border-radius: 5px; 
+    background: #6F533E; 
+    border: 1px solid transparent; 
+}
 
 /*======================= Product Carousel end =========================================
 ======================================================================================*/
+
+/*======================= Product Banner =========================================
+======================================================================================*/
+#product-banner{
+    padding-bottom: 77px;
+    padding-top: 77px;
+}
+.bannerleft, .bannerright{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+}
+.bannerleft{
+    justify-content: start;
+}
+.bannerleft .text{
+    position: absolute;
+    top: 73px;
+    left: 70px;
+
+}
+.bannerleft p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--bg-primary);
+} 
+.bannerleft h3{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: var(--text-dark);
+}
+
+
+.banner-btn {
+    position: relative;
+    display: inline-block;
+    width: auto; 
+    height: auto;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .banner-btn span {
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 15px;
+    transition: 0.3s;
+}
+    .btn-2::before {
+        background-color:#FF6A00;
+        transition: 0.3s ease-out;
+      }
+    .btn-2 span {
+        color: var(--bg-primary);
+        transition: 0.2s;
+        align-items: center;
+        } 
+        .btn-2 span i{
+            display: none;
+            }
+      .btn-2 span:hover {
+        color: rgb(255,255,255);
+        transition: 0.2s 0.1s;
+      }
+      .btn-2 span:hover i{
+        display: block;
+        transition:  0.1s;
+
+      }
+    .banner-btn.hover-slide-up::before {
+        content: "";
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        height: 100%;
+        width: 66%;
+        border-radius: 50px;
+      }
+    .banner-btn.hover-slide-up:hover::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+.bannerright{
+    justify-content: end;
+}
+
+.bannerright .text{
+    position: absolute;
+    top: 73px;
+    left: 70px;
+
+}
+.bannerright p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--bg-primary);
+} 
+.bannerright h3{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: var(--text-dark);
+}
+
+.bannerright img,.bannerright .img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*======================= Product Banner end =========================================
+======================================================================================*/
+/*======================= Product List Carousel =========================================
+======================================================================================*/
+
+#product-list-carousel{
+    padding-bottom: 77px;
+    padding-top: 77px;
+}
+
+#product-list-carousel .btn{
+    font-weight: 500;
+    text-decoration: underline;
+    color: #6F533E;
+    
+}
+#product-list-carousel .swiper {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#product-list-carousel .swiper-slide {
+    height: calc((100% - 30px) / 2) !important;
+} 
+#product-list-carousel .imageproduct {
+    margin-bottom: 60px;
+}
+
+.productlist-slider{
+    position: relative;
+}
+.productlist-slider .navbutton{
+    display: flex;
+    justify-content: center;
+}
+.productlist-slider .swiper-button-next2, .swiper-button-prev2 {
+    bottom: 40%;
+    color: transparent;
+}
+.productlist-slider .swiper-button-prev2{
+    left:50px;
+}
+.productlist-slider .swiper-button-next2 i, .swiper-button-prev2 i{
+    margin: 0 20px;
+    background: #F0F2F3;
+    padding: 10px 12px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: var(--swiper-navigation-color,var(--text-dark)); 
+}
+.productlist-slider .swiper-button-next2:hover i, .swiper-button-prev2:hover i{
+    background:#6F533E;
+    color: var(--swiper-navigation-color,#ffffff);
+
+}
+.productlist-slider .swiper-button-prev2 i{
+    rotate: 180deg;
+}
+
+
+
+
+/*======================= Product List Carousel end =========================================
+======================================================================================*/
+

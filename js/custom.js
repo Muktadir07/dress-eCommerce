@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 6,
-    spaceBetween: 50,
+    slidesPerView: 7,
+    spaceBetween: 40,
     freeMode: true,
     pagination: {
       el: ".swiper-pagination",
@@ -14,8 +14,8 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 var productSwiper =new Swiper(".mySwiperProduct", {
-    slidesPerView:4,
-    spaceBetween:30,
+    slidesPerView:5,
+    spaceBetween:20,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -26,4 +26,20 @@ var productSwiper =new Swiper(".mySwiperProduct", {
       },
 
         
+})
+
+var productSwiperList =new Swiper(".mySwiperProductList", {
+  slidesPerView:5,
+  grid: {
+    rows: 2,
+    fill: "row",
+  },
+  spaceBetween:20,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  
+
+      
 })
