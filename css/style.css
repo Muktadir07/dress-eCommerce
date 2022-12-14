@@ -63,6 +63,16 @@ h5{
     /* identical to box height, or 130% */
     color: #F2B227;
 }
+h6{
+    font-family: var(--lg-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #222222;
+}
 p{
     font-family: var(--lg-font);
     font-size: 14px;
@@ -672,7 +682,7 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
     left: 50%;
     opacity: 0.7;
     transform: translateX(-50%);
-    transition: 0.4s;
+    transition: 0.5s;
 }
 .imageproduct:hover .overlay{
     width: 100%;
@@ -697,6 +707,7 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
     backdrop-filter: blur(37.5px);
     transform:translateY(50%) scaleY(0);
     transition: 0.4s;
+    transition-delay: 0.2s;
 
 }
 .imageproduct:hover .cart{
@@ -719,7 +730,7 @@ button.wishlist {
     color: transparent;
 }
 .product-swiper-slider .swiper-button-next{
-    right: -70px;
+    right: -60px;
 }
 .product-swiper-slider .swiper-button-prev{
     left: -50px;
@@ -737,6 +748,7 @@ button.wishlist {
     height: 10px; 
     background: #E2CFC1; 
     opacity: 1; 
+    transition: all linear .3s;
 }
 .swiper-pagination-bullet-active { 
     width: 20px; 
@@ -812,8 +824,8 @@ button.wishlist {
         transition: 0.3s ease-out;
       }
     .btn-2 span {
-        color: var(--bg-primary);
-        transition: 0.2s;
+        color: #ffffff;
+        transition: linear 0.3s;
         align-items: center;
         } 
         .btn-2 span i{
@@ -821,11 +833,11 @@ button.wishlist {
             }
       .btn-2 span:hover {
         color: rgb(255,255,255);
-        transition: 0.2s 0.1s;
+        transition: 0.3s 0.3s;
       }
       .btn-2 span:hover i{
         display: block;
-        transition:  0.1s;
+        transition: linear 0.3s;
 
       }
     .banner-btn.hover-slide-up::before {
@@ -919,16 +931,19 @@ button.wishlist {
 }
 .productlist-slider .swiper-button-next2 i, .swiper-button-prev2 i{
     margin: 0 20px;
-    background: #F0F2F3;
+    
     padding: 10px 12px;
     border-radius: 30px;
     font-size: 24px;
-    color: var(--swiper-navigation-color,var(--text-dark)); 
-}
-.productlist-slider .swiper-button-next2:hover i, .swiper-button-prev2:hover i{
     background:#6F533E;
     color: var(--swiper-navigation-color,#ffffff);
-
+}
+.swiper-button-next2.swiper-button-disabled i, .swiper-button-prev2.swiper-button-disabled i{
+    opacity: .65;
+    background: #F0F2F3;
+    color: var(--swiper-navigation-color,var(--text-dark)); 
+    cursor: auto;
+    pointer-events: none;
 }
 .productlist-slider .swiper-button-prev2 i{
     rotate: 180deg;
@@ -938,5 +953,101 @@ button.wishlist {
 
 
 /*======================= Product List Carousel end =========================================
+======================================================================================*/
+/*======================= top footer =========================================
+======================================================================================*/
+#top-footer{
+    padding-top: 90px;
+    padding-bottom: 60px;
+    background: #F3F6F8;
+
+}
+#top-footer,p {
+    font-family: var(--lg-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #726E6C;
+}
+#top-footer ul li{
+    margin: 12px 0;
+}
+#top-footer ul li:hover{
+    color: var(--bg-primary);
+}
+.widget1 .text{
+    padding-top: 50px;
+}
+.widget2, .widget3, .widget4{
+    padding-top: 10px;   
+}
+.widget2{
+    padding-left: 30px;
+}
+.newsletter-search{
+    display: flex;
+}
+.newsletter-search .btn-subscribe {
+    margin-right: 0;
+    margin-left: 20px;
+    background: var(--bg-primary);
+    padding: 10px 22px;
+    color: white;
+    border: 1px solid var(--bg-primary);
+    border-radius: 7px;
+}
+.newsletter-search .btn-subscribe:hover {
+    opacity: .85;
+
+}
+.newsletter-search .form-control {
+    padding: .375rem 20px;
+    border: 1px solid #E1E3E5;
+}
+.social-icons .list-inline-item {
+    padding: 11px 15px;
+    font-size: 16px;
+    color: #726E6C;
+    transition: all  0.4s;
+    border: 2px solid transparent;
+}
+.social-icons .list-inline-item:hover{
+    border: 2px solid #726E6C;
+    transition: all step-start 0.4s;
+    border-radius: 50px;
+}
+
+
+/*======================= top footer end =========================================
+======================================================================================*/
+/*======================= footer =========================================
+======================================================================================*/
+#footer-section{
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background: #F3F6F8;
+    border-top:1px solid #E1E3E5;
+    position: relative; 
+}
+#footer-section:before{
+    position: absolute;
+    content: "";
+    top: 1px;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+#footer-section .copyright{
+    padding-top: 12px;
+}
+#footer-section .copyright a{
+    text-decoration: none;
+    color: #6F533E;
+}
+#footer-section .payment{
+    display: flex;
+    justify-content: end;
+}
+/*======================= footer end =========================================
 ======================================================================================*/
 
