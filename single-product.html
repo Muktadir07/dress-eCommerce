@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawsome cdn-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" 
+    href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Single Product</title>
+</head>
+<body>
+
+    <header>
+        <nav class=" navbar-expand-lg">
+            <div class="container">
+                <div class="row navrow">
+                    <div class="col-lg-3 ps-lg-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" alt="site logo">
+                        </a>
+
+                    </div>
+                    <div class="col-lg-6 d-flex ">
+                         <ul class="topnav navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link" href="#">About Us</a>
+                              </li>
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link" href="#">Category</a>
+                              </li>
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link" href="#">Contact Us</a>
+                              </li>
+                              
+                            </ul>
+                          
+
+                    </div>
+                    <div class="iconmenu col-lg-3 pe-lg-0 d-flex justify-content-end align-items-center">
+                       <div class="icondiv">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        
+                       </div>
+                       <div class="icondiv">
+                        <i class="fa-regular fa-user"></i>
+                        </div>
+                       <div class="icondiv">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="bg-black text-white">22</span>
+                       </div>
+
+                       <div class="icondiv">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="">3</span>
+                       </div>
+                       <p class="pt-2">$240.93</p>
+
+                    </div>
+                </div>
+              
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              
+            </div>
+          </nav>
+    </header>
+
+
+    <!--------------------------------------- header section end ---------------------------->
+    
+    <!--------------------------------------- single product info ---------------------------->
+  <section id="single-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="product-gallery">
+            <div id="vertical-slider">
+              <div class="slider__flex">
+                <div class="slider__images">
+                  <div class="swiper-container"> <!-- Слайдер с изображениями -->
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slider__image"><img src="https://picsum.photos/1920/1080" alt=""/><i class="fa-solid fa-maximize"></i></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image"><img src="https://picsum.photos/1920/1081" alt=""/><i class="fa-solid fa-maximize"></i></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image"><img src="https://picsum.photos/1920/1082" alt=""/><i class="fa-solid fa-maximize"></i></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image"><img src="https://picsum.photos/1920/1083" alt=""/><i class="fa-solid fa-maximize"></i></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image"><img src="https://picsum.photos/1920/1084" alt=""/><i class="fa-solid fa-maximize"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__col ">
+            
+                  <div class="slider__prev">Prev</div> 
+            
+                  <div class="slider__thumbs">
+                    <div class="swiper-container"> 
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="https://picsum.photos/1920/1080" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="https://picsum.photos/1920/1081" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="https://picsum.photos/1920/1082" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="https://picsum.photos/1920/1083" alt=""/></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image"><img src="https://picsum.photos/1920/1084" alt=""/></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="slider__next">Next</div> 
+            
+                </div>
+            
+                
+            
+              </div>
+            </div>
+            
+            </div>
+
+          </div>
+        <div class="col-lg-5">
+          <div class="product-details">
+            <div class="title">
+              <h2>Seeds of Change Organic Quinoa, Brown</h2>
+            </div>
+            <div class="reviews">
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="nostar fa-solid fa-star"></i>
+              </div>
+              <div class="reviewers">
+                <h4>5 Ratings / 53 reviews </h4>
+              </div>
+              
+            </div>
+            <div class="price">
+              <h2>250 TK <span>340TK</span></h2>
+            </div>
+            <div class="variation">
+              <div class="color-variation">
+                <h5>Color</h5>
+                <div class="colors">
+                  <div class="block-red"></div>
+                  <div class="block-blue"></div>
+                  <div class="block-yellow"></div>
+                  
+                </div>
+
+              </div>
+              <div class="size-variation">
+                <h5>Size</h5>
+                <div class="sizes">
+                  <div class="block">S</div>
+                  <div class="block">M</div>
+                  <div class="block">L</div>
+                  <div class="block">XL</div>
+                </div>
+
+              </div>
+            </div>
+            <div class="quantity">
+              <h5>Quantity</h5>
+              <i class="fa-solid fa-plus"></i>
+              <h5>5</h5>
+              <i class="fa-solid fa-minus"></i>
+
+            </div>
+            
+
+            <div class="cart-buttons">
+              <button class="wish-btn" type="button"><i class="fa-solid fa-bookmark"></i>Wishlist</button>
+              <button class="cart-btn" type="button"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+              
+            </div>
+            <div class="text">
+              <p>Free shipping for orders above $500 USD</p>
+            </div>
+            <div class="social-share">
+              <p class="pt-3">Share:</p>
+              <div class="icons">
+                <i class="fa-brands fa-google-plus"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+    <!--------------------------------------- single product info end ---------------------------->
+    <!--------------------------------------- Product description ---------------------------->
+    <section id="product-description">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Additional Indormation</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews (0)</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="text">
+                  <h4>Perfectly Done</h4>
+                  <p>Lorem ipsum dolor sit e volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus nec sem semper viverra. In lobortis egestas massa. Nam nec massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat. Ut id elit facilisis, feugiat est in, tempus lacus. Ut ultrices dictum metus, a ultricies ex vulputate ac. Ut id cursus tellus, non tempor quam. Morbi porta diam nisi, id finibus nunc tincidunt eu.</p>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <td scope="col"></td>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Color</th>
+                      <td>Black, Blue, Gray, Red</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">Size</th>
+                      <td>L, M, S</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">Brand</th>
+                      
+                      <td>Extisy</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gurantee</th>
+                      
+                      <td>Yes</td>
+                      
+                      
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <td scope="col"></td>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Color</th>
+                      <td>Black, Blue, Gray, Red</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">Size</th>
+                      <td>L, M, S</td>
+                      
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="text">
+                  <h4>I GOT SCAMMED !!!!!!!!!!!!!!!!</h4>
+                  <p>Lorem ipsum dolor sit e volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.Praesent ornare, ex a interdum consectetur, lectus diam sodales elit, vitae egestas est enim ornare nisl. Nullam in lectus nec sem semper viverra. In lobortis egestas massa. Nam nec massa nisi. Suspendisse potenti. Quisque suscipit vulputate dui quis volutpat. Ut id elit facilisis, feugiat est in, tempus lacus. Ut ultrices dictum metus, a ultricies ex vulputate ac. Ut id cursus tellus, non tempor quam. Morbi porta diam nisi, id finibus nunc tincidunt eu.</p>
+                </div>
+                
+                
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--------------------------------------- Product description end ---------------------------->
+
+
+    <!--------------------------------------- Contact us form-------- ---------------------------->
+  <section id="contact-form">
+    <div class="container">
+      <div class="row">
+        <div>
+          <p class="title">Add a review</p>
+        </div>
+      </div>
+      <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label" for="form3Example1">Your Review *</label>
+              <textarea class="form-control" name="message" rows="11" required></textarea>
+              
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <div class="imput-field">
+                <label class="form-label" for="form3Example1">Name *</label>
+                <input type="text" id="form3Example1" class="form-control" required/>
+              </div>
+              <div class="imput-field">
+                <label class="form-label" for="form3Example1">Email *</label>
+                <input type="email" id="form3Example3" class="form-control" required/>
+              </div>
+              <!-- Submit button -->
+              <div class="reviews">
+                <div class="reviewers">
+                  <h4>Your Rating: </h4>
+                </div>
+                <div class="rating-box">
+                  <div class="rating-container">
+                  <input type="radio" name="rating" value="5" id="star-5"> <label for="star-5"><i class="fa-regular fa-star"></i></label>
+                  
+                  <input type="radio" name="rating" value="4" id="star-4"> <label for="star-4"><i class="fa-regular fa-star"></i></label>
+                  
+                  <input type="radio" name="rating" value="3" id="star-3"> <label for="star-3"><i class="fa-regular fa-star"></i></label>
+                  
+                  <input type="radio" name="rating" value="2" id="star-2"> <label for="star-2"><i class="fa-regular fa-star"></i></label>
+                  
+                  <input type="radio" name="rating" value="1" id="star-1"> <label for="star-1"><i class="fa-regular fa-star"></i></label>
+                </div>
+                </div>
+                
+                
+              </div>
+              <div class="btn-submit mt-4">
+                <button type="submit" class="btn contact-btn btn-block w-100">Sign up</button>
+
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      
+        
+      </form>
+      
+    </div>
+  </section>
+
+
+    <!--------------------------------------- Contact us form end-------- ------------------------>
+
+
+
+    <!--------------------------------------- footer widget  --------------------------------->
+  <section id="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="widget1">
+                    <img src="/images/logo-dark.png" alt="">
+                    <p class="text">+880 02 223 344 , +880 123 456 789</p>
+                    <p>Level: 5, Road: 07, Block: C, <br>Niketan, Gulshan– 1, Dhaka – 1212</p>
+                  </div>
+                </div>
+              <div class="col-lg-4">
+                <div class="widget2">
+                  <h6>INFORMATION</h6>
+                  <ul class="list-unstyled pt-4">
+                    <li>About Phonks</li>
+                    <li>How to shop</li>
+                    <li>FAQ</li>
+                    <li>Desk Chair</li>
+                    <li>Contact us</li>
+                    <li>Log in</li>
+                </ul>
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+                <div class="widget3">
+                  <h6>CUSTOMER SERVICE</h6>
+                  <ul class="list-unstyled pt-4">
+                    <li>Payment Methods</li>
+                    <li>Money-back guarantee!</li>
+                    <li>Returns</li>
+                    <li>Shipping</li>
+                    <li>Privacy Policy</li>
+                </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="widget4">
+              <h6>NEWSLETTER</h6>
+              <form class="newsletter-search pt-4 form-inline">
+                <input class="form-control mr-lg-2" type="search" placeholder="Your email" aria-label="Search">
+                <button class="btn-subscribe" type="submit">Subscribe</button>
+              </form>
+              <ul class="social-icons list-inline pt-2">
+                <li class="list-inline-item"><i class="fa-brands fa-facebook"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-twitter"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-instagram"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-pinterest"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--------------------------------------- footer widget end --------------------------------->
+      
+    <!--------------------------------------- footer  --------------------------------->
+  <section id="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ">
+            <div class="copyright">
+              <p>@ 2021 - Phonks - Designed & Develop by <a href="#"> Soft IT Care</a></p>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="payment">
+              <ul class=" list-inline pt-2">
+                <li class="list-inline-item"><img src="/images/gateway1 (4).png" alt=""></li>
+                <li class="list-inline-item"><img src="/images/gateway1 (3).png" alt=""></li>
+                <li class="list-inline-item"><img src="/images/gateway1 (2).png" alt=""></li>
+                <li class="list-inline-item"><img src="/images/gateway1 (1).png" alt=""></li>
+                
+            </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+      
+      <!--------------------------------------- footer  end--------------------------------->
+
+
+    <!-- jquiry -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>
