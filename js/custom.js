@@ -90,3 +90,13 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
     }
   }
 });
+
+var $removeItem = $(".btn-remove");
+var fadeTime = 300;
+$removeItem.on("click", function () {
+  var productRow = $(this).parent().parent().parent();
+    productRow.slideUp(fadeTime, function() {
+    productRow.remove();
+    
+  });
+});

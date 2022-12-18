@@ -985,6 +985,13 @@ button.wishlist {
 #top-footer ul li:hover{
     color: var(--bg-primary);
 }
+#top-footer ul li:hover a{
+    color: var(--bg-primary);
+}
+#top-footer ul li a{
+    color: #726E6C;
+    text-decoration: none;
+}
 .widget1 .text{
     padding-top: 50px;
 }
@@ -1447,7 +1454,7 @@ button.wishlist {
     border-color: #e1e1e1;
 }
 
-#contact-form .form-control:focus {
+.form-control:focus {
     border-color: #D8C9B2;
     box-shadow: 0 0 0 0.05rem #D8C9B2;
 }
@@ -1570,6 +1577,162 @@ button.wishlist {
         border-bottom-right-radius: 16px;
     }
 }
+.cross-icon i {
+    color: #5e5656;
+    padding: 8px 10px;
+    border-radius: 25px;
+    border: 1px solid #ebebeb;   
+}
+.cross-icon i:hover {
+    color: #ffffff;
+    background: var(--bg-primary);
+    border: 1px solid var(--bg-primary);   
+}
+.cross-icon .svg{
+    border: 1px solid #000000;
+}
+.proceed-count .text h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+.proceed-count .text{
+    padding: 18px 24px;
+}
+.cart-page h2{
+    color: var(--bg-primary);
+}
+.card-body .contact-btn{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+}
 
     /*======================= Cart page=========================================
+======================================================================================*/
+
+    /*======================= payment page=========================================
+======================================================================================*/
+.payment-page {
+    padding: 100px 0;
+}
+.payment-page .card{
+    border: none;
+}
+.payment-page h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #6F533E;
+}
+.payment-page .payment-option{
+    width: 50%;
+    position: relative;
+}
+.payment-page .form-check-input{
+    position: absolute;
+    right: 20px;
+    
+}
+.payment-page .form-check-input:checked[type=radio] {
+    background-image: url(/images/checked.png);
+}
+.payment-page .form-check-input:checked[type=radio] + .payment-option{
+    background: #000000;
+}
+.payment-page .form-check-input:checked {
+    background-color: #32BA7C;
+    border-color: #32BA7C;
+} 
+.payment-btn{
+    display: flex;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+}
+.payment-option{
+    width: 60%;   
+}
+.payment-option .btn-check+.btn{
+    position: relative;
+}
+.payment-option .btn-check:checked+.btn {
+    color: var(--bs-btn-active-color);
+    background-color: #ebebeb;
+    border-color: #ffffff;
+}
+.payment-option .btn-check:hover+.btn {
+    border-color: #d2d1d1;
+}
+.payment-option .btn-check+.btn:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35%;
+    right: 10px;
+    transform: translateX(-50%);
+    background-image: url(/images/unchecked.png);
+    background-size: contain;
+}
+.payment-option .btn-check:checked+.btn:before {
+    background-image: url(/images/checked.png);
+}
+
+    /*======================= payment page end=========================================
+======================================================================================*/
+
+    /*======================= shipping address=========================================
+======================================================================================*/
+.shipping-form .form-control{
+    padding: 18px 20px;
+}
+.shipping-form .imput-field{
+    position: relative;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+.shipping-form .imput-field .label {
+    position: absolute;
+    top: -12px;
+    background: #ffffff;
+    padding: 0 10px;
+    left: 8px;
+}
+    /*======================= shipping address end=========================================
+======================================================================================*/
+
+
+    /*======================= Hero Section =========================================
+======================================================================================*/
+
+#hero-section{
+    padding: 100px 0;
+    background-image: url(/images/hero-image.png);
+    background-position: center;
+    
+}
+
+#hero-section .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #ffffff;
+}
+#hero-section h2 {
+    color: #ffffff;
+    font-style: normal;
+    text-transform: capitalize;
+}
+#hero-section .breadcrumb-nav{
+    display: flex;
+    justify-content: center;
+}
+#hero-section .breadcrumb-item a{
+    color: #fff;
+    text-decoration: none;
+}
+#hero-section .breadcrumb-item.active {
+    color: #F2B227;
+}
+    /*======================= Hero Section end=========================================
 ======================================================================================*/
