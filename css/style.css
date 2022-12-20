@@ -54,6 +54,7 @@ h4{
     line-height: 30px;
     /* identical to box height, or 130% */
     color: #B4A993;
+    margin-bottom: 0;
 }
 h5{
     font-family: 'Manrope';
@@ -514,7 +515,7 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
 }
 .circle i{
     font-size: 24px;
-
+    line-height: 30px;
 }
 .circle::before{
     position: absolute;
@@ -1435,7 +1436,7 @@ button.wishlist {
 /*======================= Product Description end =========================================
 ======================================================================================*/
 
-/*======================= Contact us form =========================================
+/*======================= Contact form =========================================
 ======================================================================================*/
 #contact-form {
     padding: 10px 0;
@@ -1503,7 +1504,7 @@ button.wishlist {
 
 }
     
-/*======================= Contact us form end =========================================
+/*======================= Contact form end =========================================
 ======================================================================================*/
 
 
@@ -1711,9 +1712,8 @@ button.wishlist {
     padding: 100px 0;
     background-image: url(/images/hero-image.png);
     background-position: center;
-    
-}
 
+}
 #hero-section .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
     color: #ffffff;
@@ -1735,4 +1735,237 @@ button.wishlist {
     color: #F2B227;
 }
     /*======================= Hero Section end=========================================
+======================================================================================*/
+
+    /*======================= Vision Section=========================================
+======================================================================================*/
+#vision{
+    
+}
+#vision .vision-container{
+    margin-top: 60px;
+    margin-bottom: 70px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.blog-image{
+    display:flex;
+    position: relative;
+}
+.blog-image .image1{
+    float: left;
+}
+.blog-image .image2 {
+    position: absolute;
+    right: 5%;
+    top: 60%;
+}
+#vision .text{
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+}
+#vision .text h2{
+    text-align: left;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 41px;
+    color: var(--bg-primary);
+}
+#vision .text .text-box{
+    margin-top: 20px;
+    padding: 25px 0;
+}
+
+#vision .text .text-box h4{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #323232;
+}
+#vision .text .text-box p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8B8B8B;
+}
+    /*======================= Vision Section end=========================================
+======================================================================================*/
+
+
+    /*======================= Choose us Section =========================================
+======================================================================================*/
+#choose-us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#choose-us .image3 img{
+    float: right;
+}
+#choose-us .text{
+    margin-top: 50px;
+}
+#choose-us .text h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #323232;
+}
+#choose-us .choose-items{
+   
+    margin-top: 40px;
+}
+#choose-us .item .text{
+    width: 65%;
+    margin: auto 0;
+    padding-left: 20px;
+}
+#choose-us .item img{
+    width: 78px;
+    height: 78px;
+}
+#choose-us .item .text h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #323232;
+}
+#choose-us .item .text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8B8B8B;
+}
+
+
+    /*======================= Choose us Section end=========================================
+======================================================================================*/
+
+    /*======================= Contact us hero=========================================
+======================================================================================*/
+
+#hero-section.contact-hero{
+    background-image: url(/images/contact-hero.png);
+    padding: 100px 0;
+    background-position: center;
+}
+
+
+    /*======================= Contact us hero end=========================================
+======================================================================================*/
+    /*======================= Map section ============================================
+======================================================================================*/
+#map{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#map .text{
+    margin-top: 50px;
+}
+#map .text h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    line-height: 30px;
+    color: #323232;
+}
+#map .text p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+
+}
+
+#map .items{
+    margin-top: 40px;
+}
+#map .item .text{
+    width: 65%;
+    margin: auto 0;
+    padding-left: 20px;
+}
+#map .item i{
+    display: flex;
+    align-items: center;
+    background: #FFEADB;
+    padding: 10px;
+    border-radius: 50%;
+}
+#map .item .text h4{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:31.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+    /*======================= Map section end=========================================
+======================================================================================*/
+
+
+    /*======================= touch section =========================================
+======================================================================================*/
+#touch-section {
+    padding: 10px 0;
+    padding-bottom: 100px;
+    background-color: var(--bg-primary);
+}
+
+#touch-section .imput-field {
+    padding-bottom: 20px;
+}
+#touch-section .imput-field .form-label {
+    color:#D4C1B3;
+    
+}
+
+#touch-section .reviews {
+    padding-top: 3px;
+}
+
+#touch-section .form-control {
+    border-color: #e1e1e1;
+    background-color: #896B55;
+    border: 1px solid #D8B49A;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+#touch-section .title{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#touch-section .contact-btn{
+    padding: 10px 0;
+    background: #896B55;
+    border: 1px solid #D8B49A;
+    border-radius: 4px;
+    color: #ffffff;
+}
+#touch-section .imput-part{
+    position: relative;
+}
+#touch-section .imput-part i{
+    position: absolute;
+    top:15px;
+    right:15px;
+    color: #D8B49A;
+}
+/*======================= touch section  end=========================================
 ======================================================================================*/
