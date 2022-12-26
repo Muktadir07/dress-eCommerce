@@ -339,19 +339,41 @@
                     </label>
                   </div>
                 </div>
-                
-
               </div>
+
               <div class="product-filter">
                 <h3 class="title">Filter By Price</h3>
                 <hr class="my-1">
                 <div class="filter-options">
-                    
-                  <div data-role="rangeslider">
-                    <label for="price-min">Price:</label>
-                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-                    <label for="price-max">Price:</label>
+                  <div class="wrapper">
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="0" max="10000" value="2500" step="50">
+                      <input type="range" class="range-max" min="0" max="10000" value="7500" step="50">
+                    </div>
+                    <div class="price-input">
+                      <div class="field">
+                        <div class="text-left text-start">
+                          <p>From:BDT</p>
+                          <input type="number" class="input-min" value="2500">
+                        </div>
+                        
+                      </div>
+                      <!-- <div class="separator">to</div> -->
+                      <div class="field">
+                        <div class="tect-right text-end">
+                          <p>To:BDT</p>
+                          <input type="number" class="input-max" value="7500">
+                        </div>
+                        
+                      </div>
+                    </div>
+
                   </div>
+                    
+                  
                 
                 </div>
                 
@@ -674,7 +696,7 @@
                   <h6>INFORMATION</h6>
                   <ul class="list-unstyled pt-4">
                     <li><a href="./about-page.html">About Phonks</a></li>
-                    <li>How to shop</li>
+                    <li><a href="./product-page.html">Shop Page</a></li>
                     <li>FAQ</li>
                     <li>Desk Chair</li>
                     <li><a href="./contact-us.html">Contact us</a></li>
@@ -702,7 +724,7 @@
           <div class="col-lg-4">
             <div class="widget4">
               <h6>NEWSLETTER</h6>
-              <form class="newsletter-search pt-4 form-inline">
+              <form class="newsletter-search pt-lg-4 form-inline">
                 <input class="form-control mr-lg-2" type="search" placeholder="Your email" aria-label="Search">
                 <button class="btn-subscribe" type="submit">Subscribe</button>
               </form>

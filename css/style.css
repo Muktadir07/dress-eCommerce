@@ -18,8 +18,15 @@ body{
     display: flex;
     justify-content: center;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
 a{
     font-family: var(--lg-font);
+    
 }
 h1{
     font-weight: 400;
@@ -728,11 +735,11 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
     font-weight: 500;
 }
 .imageproduct .title{
-    font-size: 20px;
+    font-size: 18px;
     color:var(--text-dark);
 }
 .imageproduct h3{
-    font-size: 18px;
+    font-size: 14px;
 }
 .imageproduct .price-discount{ 
     color:#FF2F2F;  
@@ -1436,10 +1443,13 @@ button.wishlist {
     align-items: center;
 }
 .product-details .social-share .icons{
+    padding-top: 20px;
+    padding-left: 20px;
+
    
 }
 .product-details .social-share i{
-    padding: 7px;
+    padding: 8px 7px 7px 8px;
     background: var(--bg-primary);
     border-radius: 25px;
     color: #fff;
@@ -2160,3 +2170,340 @@ button.wishlist {
 
 /* ======================= Product Page Carousel end=========================================
 ====================================================================================== */
+
+
+/* ======================= Product filter range slider=========================================
+====================================================================================== */
+
+.product-filter ::selection {
+    color: #fff;
+    background: #F2B227;
+  }
+  .product-filter  .wrapper {
+    /* width: 400px; */
+    /* background: #fff; */
+    /* border-radius: 10px; */
+    /* padding: 20px 25px; */
+    /* box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1); */
+}
+  .product-filter  header h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .product-filter header p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  .product-filter  .price-input {
+    width: 100%;
+    display: flex;
+    margin: 20px 0 0px;
+  }
+  .product-filter  .price-input .field {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+  }
+  .product-filter .field input {
+    width: 50%;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #737576;
+    /* border-radius: 5px; */
+    text-align: center;
+    border: none;
+    border-color: #999;
+    border-bottom: 1px solid;
+    -moz-appearance: textfield;
+}
+  .product-filter  input[type="number"]::-webkit-outer-spin-button,
+  .product-filter  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .product-filter .price-input .separator {
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-filter .slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .product-filter .slider .progress {
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #6F533E;
+  }
+  .product-filter .range-input {
+    position: relative;
+  }
+  .product-filter  .range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .product-filter input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #F2B227;
+    border: 2px solid #6F533E;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  }
+  .product-filter  input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #F2B227;
+    border: 2px solid #6F533E;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  }
+ 
+/* ======================= Product filter range slider end=====================================
+====================================================================================== */
+
+
+/* ======================= Login Page============================================
+====================================================================================== */
+#login-page{
+    margin: 60px 0;
+  
+}
+#login-page .form-page{
+    margin: 100px;
+    background: #FFFFFF;
+    box-shadow: -39px -14px 113.46px rgba(0, 0, 0, 0.03), -47px 94px 66.4476px rgba(0, 0, 0, 0.0227778), 77px 2px 109px -29px rgba(0, 0, 0, 0.0582);
+    border-radius: 8px;
+    display: block;
+}
+.form-page .logo{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.form-page p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+}
+.form-page p span{
+    color: #D42128;
+}
+.form-page .form-part{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+.form-page .form-control {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 8px;
+}
+.form-page .form-part .alternate-box{
+    padding:20px 0;
+}
+.form-page .form-part .alternate-box p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #042857;
+}
+.form-page .form-part .alternate-box a{
+    color: var(--bg-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+.form-page .social-share{
+    padding-top:20px;
+    padding-bottom: 50px;
+}
+.form-page .social-share i{
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 50%;
+    color: var(--bg-primary);
+    background: #FFF5EE;
+    transition:all ease-in-out 0.5s;   
+}
+.form-page .social-share i:hover{
+    color:#FFF5EE;
+    background: var(--bg-primary);
+    cursor: pointer;
+}
+.form-page .imput-field input:focus::placeholder {
+    color: transparent;
+  }
+
+/* ======================= Login Page end=========================================
+====================================================================================== */
+
+
+/* ======================= Registration Page =========================================
+====================================================================================== */
+#registration-page{
+    margin: 60px 0;
+  
+}
+#registration-page .form-page{
+    margin: 100px;
+    background: #FFFFFF;
+    box-shadow: -39px -14px 113.46px rgba(0, 0, 0, 0.03), -47px 94px 66.4476px rgba(0, 0, 0, 0.0227778), 77px 2px 109px -29px rgba(0, 0, 0, 0.0582);
+    border-radius: 8px;
+    display: block;
+}
+.form-page .imput-field{
+    margin-bottom: 15px;
+}
+
+/* ======================= Registration Page end=========================================
+====================================================================================== */
+
+
+/* ======================= Reset password=========================================
+====================================================================================== */
+#reset-pass{
+    margin: 60px 0;
+  
+}
+#reset-pass .form-page{
+    margin: 100px;
+    background: #FFFFFF;
+    box-shadow: -39px -14px 113.46px rgba(0, 0, 0, 0.03), -47px 94px 66.4476px rgba(0, 0, 0, 0.0227778), 77px 2px 109px -29px rgba(0, 0, 0, 0.0582);
+    border-radius: 8px;
+    display: block;
+}
+#reset-pass .form-page .form-control {
+    text-align: center;
+}
+
+
+
+/* ======================= Reset password end=========================================
+====================================================================================== */
+
+
+/* ==================================================================================
+====================================================================================== 
+=======================  MEDIA FIELD Start Here============================================
+====================================================================================== */
+
+
+@media only screen and (max-width: 540px) {
+    #reset-pass .form-page, 
+    #login-page .form-page, 
+    #registration-page .form-page {
+        margin: 0px 10px;
+    }
+    .form-page .logo {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    .form-page .logo img {
+        width: 50%;
+        height: auto;
+    }
+    .form-page .logo h3{
+        font-size: 16px;
+    }
+    .form-page .form-part .alternate-box {
+        padding: 10px 0;
+    }
+    .form-page .form-part .alternate-box p {
+        font-size: 12px;
+    }
+    .form-page .social-share {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .form-page .social-share i {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .contact-btn {
+        font-size: 16px;
+    }
+
+
+    /* -----------footer top--------------- */
+
+    #top-footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #top-footer ul{
+        margin-bottom: 0;
+    }
+    .newsletter-search .btn-subscribe {
+        margin-right: 0;
+        margin-left: 10px;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .newsletter-search {
+        margin-top: 10px;
+    }
+    .widget1 {
+        padding-bottom: 15px;
+    }
+    .widget4 h6{
+        padding-left: 1px;
+    }
+    .widget2{
+        padding-left: unset;
+    }
+    .widget2 .list-unstyled, 
+    .widget3 .list-unstyled {
+        padding-top: 10px !important;
+    }
+    .widget2, .widget3, .widget4 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* -----------footer--------------- */
+    #footer-section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .copyright p{
+        font-size: 14px;
+        text-align: center;
+    }
+    #footer-section .payment {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    #footer-section .payment ul li img{
+        width: 90%;
+    }
+
+
+
+}
