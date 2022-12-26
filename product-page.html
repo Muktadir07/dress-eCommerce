@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawsome cdn-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" 
+    href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Phonks</title>
+</head>
+<body>
+    <header>
+        <nav class=" navbar-expand-lg">
+            <div class="container">
+                <div class="row navrow">
+                    <div class="col-lg-3 ps-lg-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" alt="site logo">
+                        </a>
+
+                    </div>
+                    <div class="col-lg-6 d-flex ">
+                         <ul class="topnav navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link" href="#">About Us</a>
+                              </li>
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link" href="single-product.html">Category <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="dropdown">
+                                  <ul class="dropdown-menu">
+                                    <li><a class="drowpdown-item" href="#">item1</a></li>
+                                    <li><a class="drowpdown-item" href="#">item2</a></li>
+                                    <li><a class="drowpdown-item" href="#">item3</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="nav-item px-lg-2 mx-lg-1">
+                                <a class="nav-link" href="cart-page.html">Contact Us</a>
+                              </li>
+                              
+                            </ul>
+                          
+
+                    </div>
+                    <div class="iconmenu col-lg-3 pe-lg-0 d-flex justify-content-end align-items-center">
+                       <div class="icondiv">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        
+                       </div>
+                       <div class="icondiv">
+                        <i class="fa-regular fa-user"></i>
+                        </div>
+                       <div class="icondiv">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="bg-black text-white">22</span>
+                       </div>
+
+                       <div class="icondiv">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="">3</span>
+                       </div>
+                       <p class="pt-2">$240.93</p>
+
+                    </div>
+                </div>
+              
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              
+            </div>
+          </nav>
+    </header>
+
+
+    <!--------------------------------------- header section end ---------------------------->
+
+
+    <!--------------------------------------- banner section ---------------------------->
+
+    <section id="banner">
+     <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            
+            <div class="carousel-text">
+              <h5 class="animate pop">Trade-in Offer</h5>
+              <h1 class="animate pop delay-1">Denim elastic waist Dress</h1>
+              <h4 class="mt-4 animate pop delay-2">30% off Summer Vacation .Free <br>shipping for orders</h4>
+              <button type="button" class="shopbtn mt-4 btn btn-warning animate pop delay-3">SHOP NOW</button>
+            </div>
+            
+            <div class="orbit">
+              <div class="slider-image">
+                <img src="assets/images/slider-image1.png" alt="">
+              </div>
+              <div id="circle-orbit-container">
+
+                <!-- Circles closest to the central point -->
+                <div id="inner-orbit">
+                  <div class="inner-orbit-cirlces"></div>
+                </div>
+              
+                <!-- Circles second closest to the central point -->
+                <div id="middle-orbit">
+                  <div class="middle-orbit-cirlces1"></div>
+                  <div class="middle-orbit-cirlces2"></div>
+                </div>
+              
+                <!-- Circles furthest away to the central point -->
+                <div id="outer-orbit">
+                  <div class="outer-orbit-cirlce1"></div>
+                  <div class="outer-orbit-cirlce1-2"></div>
+                  <div class="outer-orbit-cirlce2"></div>
+                  <div class="outer-orbit-cirlce3"></div>
+                  <div class="outer-orbit-cirlce4"></div>
+                </div>
+              
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            
+            <div class="carousel-text">
+              <h5 class="animate pop">Trade-in Offer</h5>
+              <h1 class="animate pop delay-1">Denim elastic waist Dress</h1>
+              <h4 class="mt-4 animate pop delay-2">30% off Summer Vacation .Free <br>shipping for orders</h4>
+              <button type="button" class="shopbtn mt-4 btn btn-warning animate pop delay-3">SHOP NOW</button>
+            </div>
+            
+            <div class="orbit">
+              <div class="slider-image">
+                <img src="assets/images/slider-image1.png" alt="">
+              </div>
+              <div id="circle-orbit-container">
+
+                <!-- Circles closest to the central point -->
+                <div id="inner-orbit">
+                  <div class="inner-orbit-cirlces"></div>
+                </div>
+              
+                <!-- Circles second closest to the central point -->
+                <div id="middle-orbit">
+                  <div class="middle-orbit-cirlces1"></div>
+                  <div class="middle-orbit-cirlces2"></div>
+                </div>
+              
+                <!-- Circles furthest away to the central point -->
+                <div id="outer-orbit">
+                  <div class="outer-orbit-cirlce1"></div>
+                  <div class="outer-orbit-cirlce1-2"></div>
+                  <div class="outer-orbit-cirlce2"></div>
+                  <div class="outer-orbit-cirlce3"></div>
+                  <div class="outer-orbit-cirlce4"></div>
+                </div>
+              
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            
+            <div class="carousel-text">
+              <h5 class="animate pop">Trade-in Offer</h5>
+              <h1 class="animate pop delay-1">Denim elastic waist Dress</h1>
+              <h4 class="mt-4 animate pop delay-2">30% off Summer Vacation .Free <br>shipping for orders</h4>
+              <button type="button" class="shopbtn mt-4 btn btn-warning animate pop delay-3">SHOP NOW</button>
+            </div>
+            
+            <div class="orbit">
+              <div class="slider-image">
+                <img src="assets/images/slider-image1.png" alt="">
+              </div>
+              <div id="circle-orbit-container">
+
+                <!-- Circles closest to the central point -->
+                <div id="inner-orbit">
+                  <div class="inner-orbit-cirlces"></div>
+                </div>
+              
+                <!-- Circles second closest to the central point -->
+                <div id="middle-orbit">
+                  <div class="middle-orbit-cirlces1"></div>
+                  <div class="middle-orbit-cirlces2"></div>
+                </div>
+              
+                <!-- Circles furthest away to the central point -->
+                <div id="outer-orbit">
+                  <div class="outer-orbit-cirlce1"></div>
+                  <div class="outer-orbit-cirlce1-2"></div>
+                  <div class="outer-orbit-cirlce2"></div>
+                  <div class="outer-orbit-cirlce3"></div>
+                  <div class="outer-orbit-cirlce4"></div>
+                </div>
+              
+              </div>
+
+            </div>
+            
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> 
+      </div>
+     </div>
+    </section>
+  <!--------------------------------------- banner section end ---------------------------->
+  <!--------------------------------------- service section ---------------------------->
+  <section id="service-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 service-item">
+          <div class="icon">
+            <img src="assets/images/fast.png" alt="fast">
+          </div>
+          <div class="text">
+            <h3>Free Shipping</h3>
+            <p>Product are free shipping</p>
+          </div>
+        </div>
+        <div class="col-lg-3 service-item">
+          <div class="icon">
+            <img src="assets/images/support.png" alt="fast">
+          </div>
+          <div class="text">
+            <h3>Support 24/7</h3>
+            <p>Support 24/7 hours a day</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 service-item">
+          <div class="icon">
+            <img src="assets/images/credit-card.png" alt="fast">
+          </div>
+          <div class="text">
+            <h3>Secure Payment</h3>
+            <p>We ensure secure payment</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 service-item">
+          <div class="icon">
+            <img src="assets/images/returning.png" alt="fast">
+          </div>
+          <div class="text">
+            <h3>100% Moneyback</h3>
+            <p>Most product are free shipping</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--------------------------------------- service section end ---------------------------->
+
+      <!--------------------------------------- Product List ------------------------------------->
+      <section id="product-page-carousel">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading d_flex align-items-center">
+                <div class="circle">
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+                <h2 class="my-auto mx-3">All Products</h2>
+                <div class="circle">
+                  <i class="fa-regular fa-circle"></i>
+                </div>
+                  
+                
+              </div>
+            </div>
+            <!-- <div class="col-lg-12">
+              <div class="more-btn d-flex justify-content-end">
+                <button class="btn pt-0 pe-0">See All Products</button>
+              </div>
+            </div> -->
+            <div class="col-lg-3">
+              <div class="product-filter">
+                <h3 class="title">PRODUCT CATEGORIES</h3>
+                <hr class="my-1">
+                <div class="filter-options">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Hamim Fasion
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                    <label class="form-check-label" for="flexCheckChecked">
+                      NS Fasion
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Levin
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                    <label class="form-check-label" for="flexCheckChecked">
+                      IELGY
+                    </label>
+                  </div>
+                </div>
+                
+
+              </div>
+              <div class="product-filter">
+                <h3 class="title">Filter By Price</h3>
+                <hr class="my-1">
+                <div class="filter-options">
+                    
+                  <div data-role="rangeslider">
+                    <label for="price-min">Price:</label>
+                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                    <label for="price-max">Price:</label>
+                  </div>
+                
+                </div>
+                
+
+              </div>
+
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-6 d-flex justify-content-start align-items-center">
+                  <div class="items-number">
+                    <p>We found <strong>1–25 </strong> of <strong> 56</strong> items for you!
+
+                    </p>
+                  </div>
+
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end align-items-center">
+                  <div class="item-filters d-flex justify-content-end align-items-center">
+                    <div class="dropdown">
+                      <button class="btn dropdown-btn" type="button" data-bs-toggle="dropdown-list" >Sort by: Featured <i class="fa-solid fa-chevron-down"></i></button>
+                    
+                      <ul class="dropdown-list">
+                        <li><a class="dropdown-item" href="#">Item1</a></li>
+                        <li><a class="dropdown-item" href="#">Item2</a></li>
+                        <li><a class="dropdown-item" href="#">Item3</a></li>
+                      </ul>
+                    </div>
+
+                    
+                  </div>
+                  <form class="">
+                    <div class="filter-choose">
+                      <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+                      <label class="btn filter-btn" for="option1"><i class="fa-solid fa-border-all"></i></label>
+                    
+                      <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
+                      <label class="btn filter-btn" for="option2"><i class="fa-solid fa-bars"></i></label>
+                    
+                    </div>
+                  
+                  </form>
+
+                </div>
+                <div class="col-lg-12">
+                  <div class="productlist-slider">
+                    <div class="swiper product-carousel">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="imageproduct">
+                            <div class="image-layer">
+                              <button class="wishlist">
+                                <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                <img class="d-none" src="assets/images/heart.png" alt="">
+                              </button>
+                              <img src="assets/images/Mask group7.png" alt="">
+                              <div class="overlay"></div>
+                              <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                            </div>
+                            <p class="category">Accessories</p>
+                            <h3 class="title">Simple Black T-Shirt</h3>
+                            <h3 class="price-discount">BDT 650<span>BDT 670</span></h3>
+                          </div>
+                        </div>
+                        <div class="swiper-slide ">
+                          <div class="imageproduct">
+                            <div class="image-layer">
+                              <button class="wishlist">
+                                <img class="d-none" src="assets/images/heart-add-sm.png" alt="">
+                                <img class="" src="assets/images/heart.png" alt="">
+                              </button>
+                              <img src="assets/images/Mask group.png" alt="">
+                              <div class="overlay"></div>
+                              <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                            </div>                   
+                            <p class="category">Clothes</p>
+                            <h3 class="title">Simple Blue T-Shirt</h3>
+                            <h3 class="price">BDT 610</h3>
+                          </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <div class="imageproduct">
+                              <div class="image-layer">
+                                <button class="wishlist">
+                                  <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                  <img class="d-none" src="assets/images/heart.png" alt="">
+                                </button>
+                                <img src="assets/images/Mask group8.png" alt="">
+                                <div class="overlay"></div>
+                                <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                              </div>
+                            <p class="category">Clothes</p>
+                            <h3 class="title">Lined Brown Swearshirt</h3>
+                            <h3 class="price-discount">BDT 650<span>BDT 670</span></h3>
+                          </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <div class="imageproduct">
+                              <div class="image-layer">
+                                <button class="wishlist">
+                                  <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                  <img class="d-none" src="assets/images/heart.png" alt="">
+                                </button>
+                                <img src="assets/images/Mask group9.png" alt="">
+                                <div class="overlay"></div>
+                                <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                              </div>
+                            <p class="category">Jacket</p>
+                            <h3 class="title">Simple jacket</h3>
+                            <h3 class="price">BDT 610</h3>
+                          </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <div class="imageproduct">
+                              <div class="image-layer">
+                                <button class="wishlist">
+                                  <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                  <img class="d-none" src="assets/images/heart.png" alt="">
+                                </button>
+                                <img src="assets/images/Mask group (1).png" alt="">
+                                <div class="overlay"></div>
+                                <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                              </div>
+                            <p class="category">Accessories</p>
+                            <h3 class="title">Simple Black T-Shirt</h3>
+                            <h3 class="price">BDT 610</h3>
+                          </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <div class="imageproduct">
+                              <div class="image-layer">
+                                <button class="wishlist">
+                                  <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                  <img class="d-none" src="assets/images/heart.png" alt="">
+                                </button>
+                                <img src="assets/images/Mask group.png" alt="">
+                                <div class="overlay"></div>
+                                <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                              </div>
+                            <p class="category">Accessories</p>
+                            <h3 class="title">Simple Black T-Shirt</h3>
+                            <h3 class="price">BDT 610</h3>
+                          </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <div class="imageproduct">
+                              <div class="image-layer">
+                                <button class="wishlist">
+                                  <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                  <img class="d-none" src="assets/images/heart.png" alt="">
+                                </button>
+                                <img src="assets/images/Mask group10.png" alt="">
+                                <div class="overlay"></div>
+                                <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                              </div>
+                            <p class="category">Accessories</p>
+                            <h3 class="title">Simple Black T-Shirt</h3>
+                            <h3 class="price">BDT 610</h3>
+                          </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <div class="imageproduct">
+                              <div class="image-layer">
+                                <button class="wishlist">
+                                  <img class="d-none" src="assets/images/heart-add-sm.png" alt="">
+                                  <img class="" src="assets/images/heart.png" alt="">
+                                </button>
+                                <img src="assets/images/Mask group11.png" alt="">
+                                <div class="overlay"></div>
+                                <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+                              </div>
+                            <p class="category">Accessories</p>
+                            <h3 class="title">Simple Black T-Shirt</h3>
+                            <h3 class="price">BDT 610</h3>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="imageproduct">
+                            <div class="image-layer">
+                              <button class="wishlist">
+                                <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                <img class="d-none" src="assets/images/heart.png" alt="">
+                              </button>
+                              <img src="assets/images/Mask group (2).png" alt="">
+                              <div class="overlay"></div>
+                              <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+        
+                            </div>
+                          <p class="category">Clothes</p>
+                          <h3 class="title">Lined Brown Swearshirt</h3>
+                          <h3 class="price">BDT 610</h3>
+                        </div>
+                      </div>
+                        <div class="swiper-slide">
+                          <div class="imageproduct">
+                            <div class="image-layer">
+                              <button class="wishlist">
+                                <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                <img class="d-none" src="assets/images/heart.png" alt="">
+                              </button>
+                              <img src="assets/images/Mask group 12.png" alt="">
+                              <div class="overlay"></div>
+                              <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+        
+                            </div>
+                          <p class="category">Clothes</p>
+                          <h3 class="title">Lined Brown Swearshirt</h3>
+                          <h3 class="price">BDT 610</h3>
+                        </div>
+                      </div>
+                        <div class="swiper-slide">
+                          <div class="imageproduct">
+                            <div class="image-layer">
+                              <button class="wishlist">
+                                <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                <img class="d-none" src="assets/images/heart.png" alt="">
+                              </button>
+                              <img src="assets/images/Mask group.png" alt="">
+                              <div class="overlay"></div>
+                              <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+        
+                            </div>
+                          <p class="category">Clothes</p>
+                          <h3 class="title">Lined Brown Swearshirt</h3>
+                          <h3 class="price">BDT 610</h3>
+                        </div>
+                      </div>
+                        <div class="swiper-slide">
+                          <div class="imageproduct">
+                            <div class="image-layer">
+                              <button class="wishlist">
+                                <img class="" src="assets/images/heart-add-sm.png" alt="">
+                                <img class="d-none" src="assets/images/heart.png" alt="">
+                              </button>
+                              <img src="assets/images/Mask group7.png" alt="">
+                              <div class="overlay"></div>
+                              <button class="cart"><i class="fa-solid fa-shopping-cart mx-2"></i>Add to Cart</button>
+        
+                            </div>
+                          <p class="category">Clothes</p>
+                          <h3 class="title">Lined Brown Swearshirt</h3>
+                          <h3 class="price">BDT 610</h3>
+                        </div>
+                      </div>
+                      
+                      </div>    
+                      <div class="swiper-pagination"></div>
+                      <!-- <div class="navbutton">
+                        <div class="swiper-button-prev2"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="swiper-button-next2"><i class="fa-solid fa-arrow-right"></i></div>
+                        
+                      </div> -->
+                      
+                    </div>
+                  </div>        
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!--------------------------------------- Product List end --------------------------------->
+
+  <!--------------------------------------- Product Banner --------------------------------->
+    <section id="product-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ">
+            <div class="bannerleft">
+              <img src="assets/images/banner-2 0.png" alt="">
+              <div class="text">
+                <p>Smart Offer</p>
+                <h3>Get 10% OFF on<br>
+                  Woman Bag</h3>
+                  <button type="button" class="banner-btn btn-2 hover-slide-up">
+                    <span>Shop Now<i class="fa-solid fa-arrow-right px-2"></i></span> </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bannerright">
+              <img src="assets/images/banner-2 1.png" alt="">
+              <div class="text">
+                <p>Limited time only</p>
+                <h3>Get 10% OFF on<br>
+                    Trainers & Sportwear</h3>
+                  <button type="button" class="banner-btn btn-2 hover-slide-up">
+                    <span>Shop Now<i class="fa-solid fa-arrow-right px-2"></i></span> </button>
+              </div>
+
+            </div>
+
+          </div>
+         
+        </div>
+        
+      </div>
+    </section>
+    <!--------------------------------------- Product Banner end ------------------------------->
+
+
+
+    <!--------------------------------------- footer widget  --------------------------------->
+    <section id="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="widget1">
+                    <img src="assets/images/logo-dark.png" alt="">
+                    <p class="text">+880 02 223 344 , +880 123 456 789</p>
+                    <p>Level: 5, Road: 07, Block: C, <br>Niketan, Gulshan– 1, Dhaka – 1212</p>
+                  </div>
+                </div>
+              <div class="col-lg-4">
+                <div class="widget2">
+                  <h6>INFORMATION</h6>
+                  <ul class="list-unstyled pt-4">
+                    <li><a href="./about-page.html">About Phonks</a></li>
+                    <li>How to shop</li>
+                    <li>FAQ</li>
+                    <li>Desk Chair</li>
+                    <li><a href="./contact-us.html">Contact us</a></li>
+                    <li>Log in</li>
+                </ul>
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+                <div class="widget3">
+                  <h6>CUSTOMER SERVICE</h6>
+                  <ul class="list-unstyled pt-4">
+                    <li><a href="./payment-page.html">Payment Methods</a></li>
+                    <li>Money-back guarantee!</li>
+                    <li><a href="./single-product.html"> Single Product</a></li>
+                    <li><a href="./shipping-address-page.html">Shipping</a></li>
+                    <li><a href="./cart-page.html">Cart Page</a></li>
+                </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="widget4">
+              <h6>NEWSLETTER</h6>
+              <form class="newsletter-search pt-4 form-inline">
+                <input class="form-control mr-lg-2" type="search" placeholder="Your email" aria-label="Search">
+                <button class="btn-subscribe" type="submit">Subscribe</button>
+              </form>
+              <ul class="social-icons list-inline pt-2">
+                <li class="list-inline-item"><i class="fa-brands fa-facebook"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-twitter"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-instagram"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-pinterest"></i></li>
+                <li class="list-inline-item"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------- footer widget end --------------------------------->
+    
+    <!--------------------------------------- footer  --------------------------------->
+    <section id="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ">
+            <div class="copyright">
+              <p>@ 2021 - Phonks - Designed & Develop by <a href="#"> Soft IT Care</a></p>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="payment">
+              <ul class=" list-inline pt-2">
+                <li class="list-inline-item"><img src="/assets/images/gateway1 (4).png" alt=""></li>
+                <li class="list-inline-item"><img src="/assets/images/gateway1 (3).png" alt=""></li>
+                <li class="list-inline-item"><img src="/assets/images/gateway1 (2).png" alt=""></li>
+                <li class="list-inline-item"><img src="/assets/images/gateway1 (1).png" alt=""></li>
+                
+            </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--------------------------------------- footer  end--------------------------------->
+
+    <!-- jquiry -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>

@@ -80,9 +80,10 @@ p{
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
+    margin-bottom: 0;
 }
 .title {
-    padding: 30px 0;
+    /* padding: 30px 0; */
     font-family: var(--lg-font);
     font-weight: 600;
     font-size: 24px;
@@ -102,13 +103,13 @@ header{
     color: #ffffff;
     font-weight: 400;
 }
-.topnav a{
+.topnav .nav-link{
     position: relative;
 }
-.topnav a:hover{
+.topnav .nav-item:hover .nav-link{
     color: #FFC05E;
 }
-.topnav a::after{
+.topnav .nav-link::after{
     position: absolute;
     content: "";
     background-color: var(--primary-color);
@@ -120,11 +121,73 @@ header{
     transition: 0.3s;
 }
 
-.topnav a:hover::after{
+.topnav .nav-item:hover .nav-link::after{
     width: 100%;
 }
 .navbar-nav .nav-link .active{
     color: #FFC05E !important;
+}
+/* .topnav .nav-link {
+    position: relative;
+} */
+.topnav .nav-item{
+    position: relative;
+}
+.topnav .nav-item .dropdown{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px) ; 
+    margin-top: 10px;
+    background: #000000;
+    transition: 0.4s all;
+    transition-delay: 0.3s;
+    z-index: 12;
+}
+.topnav .nav-item .nav-link{
+    display: flex;
+    align-items: baseline;
+    margin-left: 5px;
+}
+.topnav .nav-item .nav-link i {
+    margin-left:5px ;
+    font-size: 12px;
+    transition: 0.4s all;
+}
+.topnav .nav-item:hover .nav-link i{
+    transform: rotate(-90deg);
+}
+
+.topnav .nav-item:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform:  translateY(0px);
+}
+.topnav .nav-item .dropdown .dropdown-menu{
+    display: block;
+    opacity: 1;
+    position: absolute;
+    border-radius: 0px;
+    padding: 10px 20px;
+    /* top: 10%;
+    left: 0;
+    width:100%; */
+    background-color: var(--bg-primary);
+    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+}
+.topnav .dropdown ul li {
+    position: relative;
+    padding: 5px 0;
+    transition: 0.3s all;
+}
+.topnav .dropdown ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.topnav .dropdown ul li:hover{
+    padding-left: 10px;
+    /* transition: 0.3s all; */
 }
 
 /*======================= nav icons=========================================
@@ -994,7 +1057,7 @@ button.wishlist {
     text-decoration: none;
 }
 .widget1 .text{
-    padding-top: 50px;
+    padding-top: 35px;
 }
 .widget2, .widget3, .widget4{
     padding-top: 10px;   
@@ -1318,7 +1381,7 @@ button.wishlist {
 .product-details .quantity i{
     font-size: 16px;
     border-radius: 25px;
-    padding: 8px;
+    padding: 7px 8px;
     margin: 0 20px;
     color: #9E9E9E;
     background: #d9d9d9;
@@ -1637,7 +1700,7 @@ button.wishlist {
     
 }
 .payment-page .form-check-input:checked[type=radio] {
-    background-image: url(/images/checked.png);
+    background: url('../assets/images/checked.png');
 }
 .payment-page .form-check-input:checked[type=radio] + .payment-option{
     background: #000000;
@@ -1674,12 +1737,14 @@ button.wishlist {
     top: 35%;
     right: 10px;
     transform: translateX(-50%);
-    background-image: url(/images/unchecked.png);
+    background: url('../assets/images/unchecked.png');
     background-size: contain;
 }
 .payment-option .btn-check:checked+.btn:before {
-    background-image: url(/images/checked.png);
+    background: url('../assets/images/checked.png');
+    background-size: contain;
 }
+
 
     /*======================= payment page end=========================================
 ======================================================================================*/
@@ -1710,8 +1775,9 @@ button.wishlist {
 
 #hero-section{
     padding: 100px 0;
-    background-image: url(/images/hero-image.png);
+    background: url('../assets/images/hero-image.png');
     background-position: center;
+    background-repeat: no-repeat;
 
 }
 #hero-section .breadcrumb-item + .breadcrumb-item::before {
@@ -1846,9 +1912,11 @@ button.wishlist {
 ======================================================================================*/
 
 #hero-section.contact-hero{
-    background-image: url(/images/contact-hero.png);
+    background: url('../assets/images/contact-hero.png');
     padding: 100px 0;
     background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -1967,5 +2035,128 @@ button.wishlist {
     right:15px;
     color: #D8B49A;
 }
-/*======================= touch section  end=========================================
-======================================================================================*/
+/* ======================= touch section  end=========================================
+====================================================================================== */
+
+/* ======================= Product Page Carousel=========================================
+====================================================================================== */
+#product-page-carousel{
+    padding-top: 77px;
+}
+
+#product-page-carousel .btn{
+    font-weight: 500;
+    text-decoration: underline;
+    color: #6F533E;
+    
+}
+#product-page-carousel .swiper {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#product-page-carousel .swiper-slide {
+    height: calc((100% - 30px) / 2) !important;
+} 
+#product-page-carousel .imageproduct {
+    margin-bottom: 60px;
+}
+#product-page-carousel .dropdown{
+    position: relative;
+}
+#product-page-carousel .dropdown .btn{
+    text-decoration-line: none;
+}
+#product-page-carousel .dropdown .btn:focus{
+    border: none;
+}
+
+#product-page-carousel .dropdown .dropdown-list {
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    left: 20px;
+    top: 0;
+    background: #fff;
+    z-index: 12;
+    list-style: none;
+    padding: 10px 30px;
+    transform: scaleY(0) translateY(0%);
+    transition: all 0.4s;
+  
+}
+#product-page-carousel .dropdown:hover .dropdown-list{
+    visibility: visible;
+    transform: scaleY(1) translateY(50%);
+}
+#product-page-carousel .dropdown-list .dropdown-item{
+    padding-left: 40px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+#product-page-carousel .dropdown-list .dropdown-item:hover{
+    padding-left: 50px;
+}
+#product-page-carousel a{
+    color: var(--bg-primary);
+}
+#product-page-carousel .filter-choose{
+    display: flex;
+}
+#product-page-carousel .btn-check+.btn{
+    border: none;
+}
+#product-page-carousel .btn-check:checked+.btn,.btn-check:focus+.btn{
+    border: none;
+    border-radius: 0px;
+    box-shadow: inset 0px -1px 15px 2px rgba(0,0,0,0.15);
+}
+#product-page-carousel .filter-btn{
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.product-filter {
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.product-filter h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #222222;
+}
+.product-filter .title{
+    background: #F2B227;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 15px;
+}
+.product-filter .filter-options{
+    padding: 15px;
+
+}
+.product-filter .form-check{
+    margin: 12px 0;
+}
+.product-filter .form-check-input{
+    border-radius: 2px;
+    border-color: #EBEBEB;
+}
+.product-filter .form-check-input:checked {
+    background: var(--bg-primary);
+    border-color:var(--bg-primary) ;
+}
+
+.product-filter .form-check-input:focus{
+    box-shadow: none;
+}
+.product-filter .form-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+/* ======================= Product Page Carousel end=========================================
+====================================================================================== */

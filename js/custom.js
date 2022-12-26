@@ -26,7 +26,7 @@ var productSwiper =new Swiper(".mySwiperProduct", {
       },
 
         
-})
+});
 
 var productSwiperList =new Swiper(".mySwiperProductList", {
   slidesPerView:5,
@@ -42,7 +42,7 @@ var productSwiperList =new Swiper(".mySwiperProductList", {
   
 
       
-})
+});
 
 
 
@@ -99,4 +99,18 @@ $removeItem.on("click", function () {
     productRow.remove();
     
   });
+});
+
+var productCarousel =new Swiper(".product-carousel", {
+  slidesPerView:4,
+  grid: {
+    rows: 2,
+    fill: "row",
+  },
+  spaceBetween:20,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+      
 });
