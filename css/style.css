@@ -100,6 +100,10 @@ p{
 
 }
 
+/* .Overflow{
+    overflow: hidden;
+} */
+
 #mobile-nav{
     display: none;
 }
@@ -2520,13 +2524,13 @@ button.wishlist {
     }
     .orbit .slider-image{
         right: unset;
-        left:30px;   
+        left:10px;   
     }
     .carousel-indicators {
         right: 90px;
     }
     .orbit .slider-image img{
-        width: 400px;
+        width: auto;
     }
     .carousel-text .shopbtn {
         padding: 10px 30px;
@@ -2653,9 +2657,10 @@ button.wishlist {
         padding-top: 50px;
     }
     .bannerleft, .bannerright {
-        width: 380px;
+        width: 100%;
         height: 180px;
         border-radius: 8px;
+        justify-content: center;
     }
     .bannerleft h3, .bannerright h3 {
         font-size: 21px;
@@ -2664,12 +2669,17 @@ button.wishlist {
         font-size: 14px;
     }
     .bannerleft {
-        justify-content: center;
-        margin: 20px auto;
+        margin: 20px 0;
     }
     .bannerleft img{
         object-fit: cover;
-        width: 100%;
+        width: 90%;
+        border-radius: 8px;
+    }
+    .bannerright img{
+        object-fit: cover;
+        width: 90%;
+        border-radius: 8px;
     }
     .bannerleft .text {
         position: absolute;
@@ -2677,8 +2687,8 @@ button.wishlist {
         left: 40px;
     }
     .bannerright {
-        justify-content: center;
-        margin: auto;
+    
+        margin: 20px 0;
     }
     .bannerright .text {
         position: absolute;
