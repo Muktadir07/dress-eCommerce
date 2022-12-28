@@ -24,7 +24,90 @@
 </head>
 <body>
     <header>
-        <nav class=" navbar-expand-lg">
+      <!-- ------------------- nav menu for small screens---------------- -->
+      <div id="mobile-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col iconmenu  d-flex justify-content-center align-items-center">
+              <div class="icondiv">
+               <i class="fa-regular fa-user"></i>
+               </div>
+              <div class="icondiv">
+               <i class="fa-regular fa-heart"></i>
+               <span class="bg-black text-white">2</span>
+              </div>
+
+              <div class="icondiv">
+               <i class="fa-solid fa-shopping-cart"></i>
+               <span class="">3</span>
+              </div>
+              <p class="">$240.93</p>
+           </div>
+          </div>
+          <div id="menu-row" class="row">
+            <div class="col-3">
+              <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <img class="" src="assets/images/menu-drawyer.png" alt="menu">
+              </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <nav class='animated bounceInDown'>
+                      <ul>
+                        <li class="active"><a href='#profile'>Home</a></li>
+                        <li><a href='#about-us'>About us</a></li>
+                        <li class='sub-menu'><a href='#settings'>Category<div class='fa fa-caret-down right'></div></a>
+                          <ul>
+                            <li><a href='#settings'>Account</a></li>
+                            <li><a href='#settings'>Profile</a></li>
+                            <li><a href='#settings'>Secruity &amp; Privacy</a></li>
+                            <li><a href='#settings'>Password</a></li>
+                            <li><a href='#settings'>Notification</a></li>
+                          </ul>
+                        </li>
+                        <li class='sub-menu'><a href='#contact-us'>Contact Us</a>
+                        </li>
+                        <li><a href='#message'>Logout</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                
+
+            </div>
+            <div class="col-6">
+              <a class="navbar-brand d-flex justify-content-center" href="index.html">
+                <img src="assets/images/logo.png" alt="site logo">
+            </a>
+
+            </div>
+            <div class="col-3">
+              <div class="search">
+                <span class="searchBtn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="searchRow">
+              <div id="searchRow2" class="row searchBox">
+                <div class="col">
+                    <div class="search-input">
+                      <input type="search" name="" placeholder="Search Here" id="">
+                    </div>
+                </div>
+
+              </div>
+        </div>
+        </div>
+
+      </div>
+      <!-- ------------------- nav menu for large screens---------------- -->
+
+        <nav class="lg-nav navbar-expand-lg">
             <div class="container">
                 <div class="row navrow">
                     <div class="col-lg-3 ps-lg-0">
@@ -296,7 +379,7 @@
                 <div class="circle">
                   <i class="fa-regular fa-circle"></i>
                 </div>
-                <h2 class="my-auto mx-3">All Products</h2>
+                <h2 class="my-auto mx-lg-3 mx-2">All Products</h2>
                 <div class="circle">
                   <i class="fa-regular fa-circle"></i>
                 </div>
@@ -383,7 +466,7 @@
             </div>
             <div class="col-lg-9">
               <div class="row">
-                <div class="col-lg-6 d-flex justify-content-start align-items-center">
+                <div class="col-lg-6 d-flex justify-content-center mb-3 mb-lg-0 justify-content-lg-start align-items-center">
                   <div class="items-number">
                     <p>We found <strong>1–25 </strong> of <strong> 56</strong> items for you!
 
@@ -640,7 +723,7 @@
       <!--------------------------------------- Product List end --------------------------------->
 
   <!--------------------------------------- Product Banner --------------------------------->
-    <section id="product-banner">
+    <section id="product-banner" class="product-list-page">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 ">
@@ -755,10 +838,10 @@
           <div class="col-lg-6 ">
             <div class="payment">
               <ul class=" list-inline pt-2">
-                <li class="list-inline-item"><img src="/assets/images/gateway1 (4).png" alt=""></li>
-                <li class="list-inline-item"><img src="/assets/images/gateway1 (3).png" alt=""></li>
-                <li class="list-inline-item"><img src="/assets/images/gateway1 (2).png" alt=""></li>
-                <li class="list-inline-item"><img src="/assets/images/gateway1 (1).png" alt=""></li>
+                <li class="list-inline-item"><img src="assets/images/gateway1 (4).png" alt=""></li>
+                <li class="list-inline-item"><img src="assets/images/gateway1 (3).png" alt=""></li>
+                <li class="list-inline-item"><img src="assets/images/gateway1 (2).png" alt=""></li>
+                <li class="list-inline-item"><img src="assets/images/gateway1 (1).png" alt=""></li>
                 
             </ul>
             </div>

@@ -24,64 +24,154 @@
 </head>
 <body>
 
-    <header>
-        <nav class=" navbar-expand-lg">
-            <div class="container">
-                <div class="row navrow">
-                    <div class="col-lg-3 ps-lg-0">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" alt="site logo">
-                        </a>
-
-                    </div>
-                    <div class="col-lg-6 d-flex ">
-                         <ul class="topnav navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item px-lg-2 mx-lg-1">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              </li>
-                              <li class="nav-item px-lg-2 mx-lg-1">
-                                <a class="nav-link" href="#">About Us</a>
-                              </li>
-                              <li class="nav-item px-lg-2 mx-lg-1">
-                                <a class="nav-link" href="#">Category</a>
-                              </li>
-                              <li class="nav-item px-lg-2 mx-lg-1">
-                                <a class="nav-link" href="#">Contact Us</a>
-                              </li>
-                              
-                            </ul>
-                          
-
-                    </div>
-                    <div class="iconmenu col-lg-3 pe-lg-0 d-flex justify-content-end align-items-center">
-                       <div class="icondiv">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        
-                       </div>
-                       <div class="icondiv">
-                        <i class="fa-regular fa-user"></i>
-                        </div>
-                       <div class="icondiv">
-                        <i class="fa-regular fa-heart"></i>
-                        <span class="bg-black text-white">22</span>
-                       </div>
-
-                       <div class="icondiv">
-                        <i class="fa-solid fa-shopping-cart"></i>
-                        <span class="">3</span>
-                       </div>
-                       <p class="pt-2">$240.93</p>
-
-                    </div>
-                </div>
-              
-              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> -->
-              
+  <header>
+    <!-- ------------------- nav menu for small screens---------------- -->
+    <div id="mobile-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col iconmenu  d-flex justify-content-center align-items-center">
+            <div class="icondiv">
+             <i class="fa-regular fa-user"></i>
+             </div>
+            <div class="icondiv">
+             <i class="fa-regular fa-heart"></i>
+             <span class="bg-black text-white">2</span>
             </div>
-          </nav>
-    </header>
+
+            <div class="icondiv">
+             <i class="fa-solid fa-shopping-cart"></i>
+             <span class="">3</span>
+            </div>
+            <p class="">$240.93</p>
+         </div>
+        </div>
+        <div id="menu-row" class="row">
+          <div class="col-3">
+            <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <img class="" src="assets/images/menu-drawyer.png" alt="menu">
+            </button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class='animated bounceInDown'>
+                    <ul>
+                      <li class="active"><a href='#profile'>Home</a></li>
+                      <li><a href='#about-us'>About us</a></li>
+                      <li class='sub-menu'><a href='#settings'>Category<div class='fa fa-caret-down right'></div></a>
+                        <ul>
+                          <li><a href='#settings'>Account</a></li>
+                          <li><a href='#settings'>Profile</a></li>
+                          <li><a href='#settings'>Secruity &amp; Privacy</a></li>
+                          <li><a href='#settings'>Password</a></li>
+                          <li><a href='#settings'>Notification</a></li>
+                        </ul>
+                      </li>
+                      <li class='sub-menu'><a href='#contact-us'>Contact Us</a>
+                      </li>
+                      <li><a href='#message'>Logout</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              
+
+          </div>
+          <div class="col-6">
+            <a class="navbar-brand d-flex justify-content-center" href="index.html">
+              <img src="assets/images/logo.png" alt="site logo">
+          </a>
+
+          </div>
+          <div class="col-3">
+            <div class="search">
+              <span class="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="searchRow">
+            <div id="searchRow2" class="row searchBox">
+              <div class="col">
+                  <div class="search-input">
+                    <input type="search" name="" placeholder="Search Here" id="">
+                  </div>
+              </div>
+
+            </div>
+      </div>
+      </div>
+
+    </div>
+    <!-- ------------------- nav menu for large screens---------------- -->
+
+      <nav class="lg-nav navbar-expand-lg">
+          <div class="container">
+              <div class="row navrow">
+                  <div class="col-lg-3 ps-lg-0">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="assets/images/logo.png" alt="site logo">
+                      </a>
+
+                  </div>
+                  <div class="col-lg-6 d-flex ">
+                       <ul class="topnav navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item px-lg-2 mx-lg-1">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item px-lg-2 mx-lg-1">
+                              <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item px-lg-2 mx-lg-1">
+                              <a class="nav-link" href="single-product.html">Category <i class="fa-solid fa-chevron-down"></i></a>
+                              <div class="dropdown">
+                                <ul class="dropdown-menu">
+                                  <li><a class="drowpdown-item" href="#">item1</a></li>
+                                  <li><a class="drowpdown-item" href="#">item2</a></li>
+                                  <li><a class="drowpdown-item" href="#">item3</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="nav-item px-lg-2 mx-lg-1">
+                              <a class="nav-link" href="cart-page.html">Contact Us</a>
+                            </li>
+                            
+                          </ul>
+                        
+
+                  </div>
+                  <div class="iconmenu col-lg-3 pe-lg-0 d-flex justify-content-end align-items-center">
+                     <div class="icondiv">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      
+                     </div>
+                     <div class="icondiv">
+                      <i class="fa-regular fa-user"></i>
+                      </div>
+                     <div class="icondiv">
+                      <i class="fa-regular fa-heart"></i>
+                      <span class="bg-black text-white">22</span>
+                     </div>
+
+                     <div class="icondiv">
+                      <i class="fa-solid fa-shopping-cart"></i>
+                      <span class="">3</span>
+                     </div>
+                     <p class="pt-2">$240.93</p>
+
+                  </div>
+              </div>
+            
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            
+          </div>
+        </nav>
+  </header>
 
 
     <!--------------------------------------- header section end ---------------------------->
@@ -92,7 +182,7 @@
       <div class="container ">
         <div class="row mb-4">
           <div class="col-lg-12">
-            <div class="d-flex justify-content-between align-items-center my-4">
+            <div class="d-flex justify-content-center justify-content-lg-between align-items-center my-2 my-lg-4">
               <h3 class="mb-0 ">Your Cart Items</h3>
             </div>
           </div>
