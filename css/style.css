@@ -12,6 +12,7 @@
 }
 body{
     font-family: 'Manrope', sans-serif;
+    
 }
 
 
@@ -111,6 +112,7 @@ p{
 header{
     background: var(--bg-primary);
     padding: 20px 0;
+    /* padding: 0; */
 }
 .topnav{
     font-size: 16px;
@@ -267,11 +269,11 @@ button.carousel-control-prev:hover .carousel-control-prev-icon{
 }
 
 .carousel-control-next {
-    right:-70px !important;
+    right:-50px !important;
     justify-content: end ;
 }
 .carousel-control-prev {
-    left:-70px !important;
+    left:-50px !important;
     justify-content: start ;
 }
 .carousel-indicators {
@@ -2434,7 +2436,10 @@ button.wishlist {
 ====================================================================================== */
 
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width:768px) {
+    header{
+        padding: 0;
+    }
 
     /* ============================== Mobile Responsive menu===========================
     ================================================================================ */
@@ -2443,7 +2448,7 @@ button.wishlist {
     }
     header{
         background: #ffffff;
-        padding-top:15px;
+        /* padding-top:15px; */
         padding-bottom: 0;
     }
     .lg-nav{
@@ -2527,7 +2532,7 @@ button.wishlist {
         left:10px;   
     }
     .carousel-indicators {
-        right: 90px;
+        right: 70px;
     }
     .orbit .slider-image img{
         width: auto;
@@ -2536,7 +2541,7 @@ button.wishlist {
         padding: 10px 30px;
     }
     #inner-orbit {
-        right: 25%;
+        right: 97px;
         width: 180px;
         height: 180px;
     }
@@ -2860,6 +2865,7 @@ button.wishlist {
     }
     .iconmenu{
         padding-bottom: 5px;
+        padding-top: 20px;
     }
     #mobile-nav .icondiv{
         padding: 0 15px;
@@ -2880,6 +2886,8 @@ button.wishlist {
         position: relative;
         z-index: 13;
     }
+    
+    
     #menu-row::before {
         position: absolute;
         content: "";
@@ -2904,22 +2912,29 @@ button.wishlist {
         padding-right: 10px;
         cursor: pointer;
     }
+    #font-menu{
+        background: var(--bg-primary);
+        z-index: 13;
+    }
     #searchRow{
         position: relative;
         width: 100%;
         display: flex;
     }
-    .searchBox {
+    #search-menu{
         position: absolute;
-        background: #362213;
         display: block;
+        width: 100%;
         top: -50px;
-        width: 100vw;
         transition: 0.3s ease-in-out;
         z-index: 4;
     }
-    .searchBox.active{
+    #search-menu.active{
         top: 0px;
+        width: 100%;
+    }
+    #search-color{
+        background: #362213;
     }
     
     .searchBox input{
@@ -3026,5 +3041,14 @@ button.wishlist {
     }
 
 
+
+}
+@media screen and  (max-width:1024px) {
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
 
 }

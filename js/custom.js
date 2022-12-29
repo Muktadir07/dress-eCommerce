@@ -248,7 +248,7 @@ rangeInput.forEach((input) => {
 // Mobile menu search bar
 
 let searchBtn= document.querySelector('.searchBtn');
-      let searchBox= document.querySelector('.searchBox');
+      let searchBox= document.querySelector('#search-menu');
       let clickBtn= false;
       searchBtn.addEventListener('click', function(){
         if(clickBtn){
